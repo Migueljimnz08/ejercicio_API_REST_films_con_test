@@ -5,6 +5,12 @@ const router = require('express').Router();
 router.get("/:title", filmsController.getFilmByTitle);
 
 // Post http://localhost:3000/api/film
+// {
+//       "Title": "Test Movie",
+//       "Author": "Test Author",
+//       "Description": "Test Description",
+//       "Src": "test.png"
+// }
 router.post('/', filmsController.createFilm);
 
 // PUT http://localhost:3000/api/film
